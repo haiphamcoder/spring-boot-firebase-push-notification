@@ -12,7 +12,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Notice implements Serializable {
-    private String subject;
+    private String title;
     private String content;
     private String image;
     private Map<String, String> data;

@@ -4,7 +4,6 @@ import com.google.firebase.messaging.*;
 import com.haiphamcoder.springbootfirebasepushnotification.entity.Notice;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -27,7 +26,7 @@ public class NotificationService {
 
         // Create the notification
         Notification notification = Notification.builder()
-                .setTitle(notice.getSubject())
+                .setTitle(notice.getTitle())
                 .setBody(notice.getContent())
                 .setImage(notice.getImage())
                 .build();

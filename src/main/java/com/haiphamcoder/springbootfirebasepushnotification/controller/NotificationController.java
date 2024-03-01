@@ -4,12 +4,12 @@ import com.google.firebase.messaging.BatchResponse;
 import com.haiphamcoder.springbootfirebasepushnotification.entity.Notice;
 import com.haiphamcoder.springbootfirebasepushnotification.service.NotificationService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("/firebase")
 @RequiredArgsConstructor
 public class NotificationController {
